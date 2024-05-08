@@ -2,6 +2,8 @@
 
 Ce projet utilise Python et la bibliothèque [rembg](https://github.com/danielgatis/rembg) pour supprimer l'arrière-plan des images. 
 
+![image](https://github.com/silmekbg/removebg/blob/main/removebg.png "Screenshot")
+
 ## Installation :
 
 Pour utiliser ce projet, vous devrez avoir Python installé sur votre ordinateur ainsi que les dépendances :  
