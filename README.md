@@ -1,4 +1,4 @@
-# removebg
+# Remove Background
 
 Ce projet utilise Python et la bibliothèque [rembg](https://github.com/danielgatis/rembg) pour supprimer l'arrière-plan des images. 
 
