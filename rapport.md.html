@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rapport.md</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="rapport-sur-une-application-web-de-suppression-de-fond-dimage-avec-streamlit-et-python">Rapport sur une application web de suppression de fond d’image avec Streamlit et Python</h1>
+<blockquote>
+<p><a href="https://github.com/silmekbg/removebg">https://github.com/silmekbg/removebg</a></p>
+</blockquote>
+<p><img src="https://github.com/silmekbg/removebg/blob/main/removebg.png?raw=true" alt="WebUI"></p>
+<h2 id="introduction">Introduction</h2>
+<p>L’objectif de ce projet est de créer une application web permettant de supprimer facilement le fond d’une image. Pour ce faire, j’ai choisi d’utiliser <a href="streamlit.io">Streamlit</a>, un framework Python pour la création d’applications web interactives, et la bibliothèque <a href="https://github.com/danielgatis/rembg">rembg</a> pour le traitement d’images.</p>
+<h2 id="démarche">Démarche</h2>
+<ol>
+<li>
+<p><strong>Recherche de solutions existantes</strong>: Nous avons examiné les solutions existantes pour la suppression de fond d’image et avons identifié <a href="https://github.com/danielgatis/rembg">rembg</a> comme la bibliothèque la plus appropriée pour notre cas d’utilisation, en raison de sa précision et de sa facilité d’utilisation.</p>
+</li>
+<li>
+<p><strong>Conception de l’architecture de l’application</strong>: En utilisant Streamlit, nous avons conçu l’architecture de l’application en définissant les différentes pages et composants nécessaires pour permettre aux utilisateurs de télécharger une image, de la traiter et de visualiser le résultat ; utiliser Streamlit permet également de pouvoir bénéficier de l’application partout grâce à une <a href="https://silmek-removebg.streamlit.app/">WebUI</a> (responsive)</p>
+</li>
+<li>
+<p><strong>Implémentation</strong>: Nous avons procédé à l’implémentation de l’application en suivant l’architecture définie, en utilisant Python pour le back-end. L’intégration de rembg a été réalisée pour le traitement d’images en arrière-plan grâce à python.</p>
+</li>
+</ol>
+<h2 id="écueils-rencontrés">Écueils rencontrés</h2>
+<ol>
+<li>
+<p><strong>Performance</strong>: L’un des principaux défis rencontrés était d’assurer des performances optimales lors du chargement de la page, qui est malencontreusement long. J’ai ensuite choisi de convertir chaque image uploader en PNG.</p>
+</li>
+<li>
+<p><strong>Gestion des erreurs</strong>: La gestion des erreurs était également un défi, en particulier lorsqu’il s’agissait de gérer les différentes libraires nécessaires pour le fonctionnement de l’application. Il fallait donc être en mesure de pouvoir gérer les conflits entre les différentes versions de python.</p>
+</li>
+</ol>
+<h2 id="solutions-retenues">Solutions retenues</h2>
+<ol>
+<li>
+<p><strong>Optimisation du code</strong>: Nous avons optimisé notre code en utilisant des bibliothèques Python efficaces.</p>
+</li>
+<li>
+<p><strong>Gestion des erreurs améliorée</strong>: Nous avons amélioré la gestion des erreurs en mettant en place des validations côté client pour les images téléchargées et en fournissant des messages d’erreur clairs et des instructions pour aider les utilisateurs à résoudre les problèmes rencontrés.</p>
+</li>
+<li>
+<p><strong>Gestion des conflits</strong>: J’ai mis en place un environnement virtuel (<a href="https://virtualenv.pypa.io/">virualenv</a>) afin d’éviter tous conflits avec d’autres projets présent sur mon pc. C’est ce qui a réglé les écueils rencontrés. Je souhaitai en premier lieu utiliser <a href="https://python-poetry.org/">poetry</a> dans le but de gérer les dépendances python, mais finalement opter pour un outil classique (virtualenv + requirements.txt). J’utiliserai poetry, sûrement, pour un futur projet.</p>
+</li>
+</ol>
+<hr>
+<p>Ce rapport résume la démarche, les défis rencontrés et les solutions retenues pour développer une application web de suppression de fond d’image avec <a href="streamlit.io">Streamlit</a> et <a href="https://www.python.org/">Python</a>.</p>
+</div>
+</body>
+
+</html>
