@@ -6,7 +6,7 @@ from rembg import remove
 from io import BytesIO
 
 
-st.set_page_config(page_title="RemoveBG", layout="wide")
+st.set_page_config(page_title="Silmek Background", layout="wide")
 st.write("# Remove BG")
 st.write("Uploadez une image pour retirer le fond et le rendre transparent")
 
